@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Abdou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Ella</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Abdou1.html">Happy</a></li>
+							<li><a href="Abdou2.html">Sad</a></li>
+							<li><a href="Abdou3.html">Angry</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div class="container">
+					<h1>Click here babe ⬇️</h1>
+					<button onclick="generateRandomText()">HERE</button>
+					<div id="outputContainer" class="output-container">
+						
+					</div>
+				<script>
+					
+					const texts = [
+						"it doesn’t feel like nearly enough to simply say that I love you I’m head over heels for you You’re my other half and the person who completes me Without you I can’t even imagine what my life would become There’s nothing I want more than to spend every waking moment by your side..",
+						"There aren’t many things I can be certain of in life But one thing I know for sure is that I’m in love with you I’m in love with your smile your kind heart your beauty your intelligence, and everything in between",
+						"You may not know it, but I am truly and deeply in love with you. I want to see you be happy every single day of your life, and I’ll do whatever I can to make sure you always have a reason to smile",
+						"I love you more than I ever thought was physically possible. You’re a ray of sunshine in my life, warming me up from the inside out even on the darkest of days. Every day with you is a blessing, and I hope you know just how much I adore you",
+						"To me, you’re everything good and beautiful that this universe has to offer. When I’m with you, I need to constantly remind myself that I’m not just dreaming I must have saved a nation in my past life to be able to have someone as amazing as you by my side",
+						"You’re the girl of my dreams and more than I could possibly deserve Your smile lights up entire rooms your laugh raises everyone’s spirits and your kindness is something everyone should admire How did I get so lucky? To this day I still can’t believe that I get to call you mine",
+						"You came into my life when I least expected it But I can confidently say that every moment since then has been the best moment of my life Everything you say everything you do, and everything you are makes the world a little brighter and I can’t imagine a life where I never met you",
+						"Even though we’re not together physically not a day goes by where I can’t feel you by my side Just the thought of you is enough to get me through the day. Even though I want nothing more than to hold your hand and never let go I hope it’s enough for me to just say that I love you more than anything in this world",
+						"I hope you know that I would literally cross every single continent in order to be with you I would climb the highest mountain and swim across the deepest seas just so I could be by your side",
+						"Even though we may be miles apart there’s not a single moment when I feel alone Your texts, calls, and gifts make it seem like you’re right next to me You’re always ready with a comforting or supportive word and I’ll always be grateful for your kindness and love You’re one of the most special people in my life",
+						"Since I can’t tell you these words in person I’ll just pour all of my feelings into this paragraph I’m crazy about you You’re one of the best things that’s ever happened to me and I’m absolutely head over heels for you When we finally get the chance to meet in person I’ll be sure to tell you these things every single day You deserve to know just how lucky I feel for being able to call you mine"
+						
+					];
+			
+					function generateRandomText() {
+						
+						const randomIndex = Math.floor(Math.random() * texts.length);
+						const randomText = texts[randomIndex];
+			
+						
+						const outputContainer = document.getElementById("outputContainer");
+						
+						
+						outputContainer.innerHTML = `<p>${randomText}</p>`;
+					}
+				</script>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

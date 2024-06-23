@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Abdou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Ella</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Abdou1.html">Happy</a></li>
+							<li><a href="Abdou2.html">Sad</a></li>
+							<li><a href="Abdou3.html">Angry</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div class="container">
+					<h1>Click here babe ⬇️</h1>
+					<button onclick="generateRandomText()">HERE</button>
+					<div id="outputContainer" class="output-container">
+						
+					</div>
+				<script>
+					
+					const texts = [
+						"When I wake up and see your smile it's like the sun rising in my heart your presence brightens up every moment and I can't help but feel grateful for having you in my life. ",
+						"Your kindness and compassion are boundless and they make me want to be a better person I am endlessly grateful to have you as my partner in this journey called life!.",
+						"Imagining spending a day without you would make me question my existence You always pushed me forward even on the days I am at my weakest I cannot imagine my future without you.",
+						"You are my inspiration and the reason for my smile I know that my heart will always choose you. I love you from every part of my heart.",
+						"In your arms I've found my favorite place Your embrace feels like home and I never want to let go because being close to you is where I belong.",
+						"Your laughter is contagious and your hugs feel like home Being with you makes me feel safe and loved and I'm grateful for every second we spend together.",
+						"Your love has turned my life around You've shown me the beauty in the simplest things and the magic in every moment we share. With you, life is an adventure worth living.",
+						"My heart belongs to you and it beats only for you You are the center of my universe and I promise to love you fiercely and unconditionally for all eternity.",
+						"Your love has taught me to see the beauty in simplicity and to appreciate the little things in life. With you, even the most mundane moments become magical.",
+						"Life with you is an adventure filled with love laughter and unforgettable moments I'm excited about our future together and the love that continues to grow between us.",
+						"Your eyes are like windows to a world of wonder and I get lost in them every time we lock gazes You make my heart skip a beat and I cherish every moment spent with you!",
+						"My love for you is a story that will never end a tale of two hearts intertwined forever I adore you more with each passing day and I'm thankful for the love you've brought into my life.",
+						"Your love is like a gentle breeze that refreshes my soul and your smile brightens even the darkest days I promise to cherish and adore you for you are the most precious gift in my life. "
+,						
+					];
+			
+					function generateRandomText() {
+						
+						const randomIndex = Math.floor(Math.random() * texts.length);
+						const randomText = texts[randomIndex];
+			
+						
+						const outputContainer = document.getElementById("outputContainer");
+						
+						
+						outputContainer.innerHTML = `<p>${randomText}</p>`;
+					}
+				</script>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

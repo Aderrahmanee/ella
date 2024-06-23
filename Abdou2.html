@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Abdou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Ella</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Abdou1.html">Happy</a></li>
+							<li><a href="Abdou2.html">Sad</a></li>
+							<li><a href="Abdou3.html">Angry</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div class="container">
+					<h1>Click here babe ⬇️</h1>
+					<button onclick="generateRandomText()">HERE</button>
+					<div id="outputContainer" class="output-container">
+						
+					</div>
+				<script>
+					
+					const texts = [
+						"Spending a day without you makes me feel like I had lived an entire year without water Your love sustains me",
+						"Your love is like the sweetest dream I do not want to wake up from it.",
+						"Babe I was praying to angels to watch over you but the angels told me not to bother because you are an angel too",
+						"You are my hiding place my song in all seasons You are the only future I see",
+						"When I first saw you I was attracted by your beautiful eyes and your charming smile But it was the beauty of your heart that I fell for",
+						"I didn’t think love was for me before I met you Now that I’m with you love is so much more tangible",
+						"With you every day is an adventure and I look forward to the journey of love we embark on together",
+						"Like the stars that illuminate the night sky your presence in my life brings an enchanting radiance",
+						"In your eyes I see a reflection of the future we'll build together and it fills my heart with excitement and joy",
+						"Every time I see your smile my heart dances with joy knowing I've found the one who completes me",
+						"Everything about you from your smile to your heart radiates sunshine You are my sunshine on a cloudy day, always",
+						"You are the melody in the soundtrack of my life and your love makes every note harmonize perfectly"
+
+						
+					];
+			
+					function generateRandomText() {
+						
+						const randomIndex = Math.floor(Math.random() * texts.length);
+						const randomText = texts[randomIndex];
+			
+						
+						const outputContainer = document.getElementById("outputContainer");
+						
+						
+						outputContainer.innerHTML = `<p>${randomText}</p>`;
+					}
+				</script>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
